@@ -1,0 +1,27 @@
+.weather-search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.weather-search input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.weather-search button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.weather-search button:hover {
+  background-color: #0056b3;
+}

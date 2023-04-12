@@ -1,0 +1,30 @@
+.weather-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 30px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.442);
+  width: 100%;
+  max-width: 400px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(83, 255, 108) rgb(0, 221, 255) rgb(72, 72, 255)
+    rgb(255, 0, 242);
+}
+
+.weather-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.weather-card p {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.weather-card p:last-child {
+  margin-bottom: 0;
+}
