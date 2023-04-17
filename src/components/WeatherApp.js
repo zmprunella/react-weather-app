@@ -6,6 +6,7 @@ import "./WeatherApp.css";
 
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
+  const [isSearchValid, setIsSearchValid] = useState(true);
 
   const handleSearch = async (query) => {
     try {
@@ -14,16 +15,21 @@ const WeatherApp = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=metric`
       );
       setWeatherData(response.data);
+      setIsSearchValid(true);
     } catch (error) {
       console.error("Error fetching weather data:", error);
       setWeatherData(null);
+      setIsSearchValid(false);
     }
   };
 
   return (
     <div className="weather-app">
-      <WeatherSearch onSearch={handleSearch} />
-      <WeatherCard weatherData={weatherData} />
+      <header>
+        <h1>Weather Finder</h1>
+      </header>
+      <WeatherSearch onSearch={handleSearch} isSearchValid={isSearchValid} />
+      {isSearchValid && <WeatherCard weatherData={weatherData} />}
     </div>
   );
 };

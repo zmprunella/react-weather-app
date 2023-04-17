@@ -3,7 +3,7 @@ import "./WeatherCard.css";
 
 const WeatherCard = ({ weatherData }) => {
   if (!weatherData) {
-    return <p>No weather data available</p>;
+    return <p>No weather data available, please search for a location.</p>;
   }
 
   const { name, main, weather, wind } = weatherData;

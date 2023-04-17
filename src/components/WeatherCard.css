@@ -28,3 +28,28 @@
 .weather-card p:last-child {
   margin-bottom: 0;
 }
+
+.weather-app header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  margin-bottom: 40px;
+  box-shadow: 1px 4px 6px 2px rgba(0, 0, 0, 0.572);
+  background: linear-gradient(
+    90deg,
+    rgba(206, 174, 238, 0.516) 0%,
+    rgba(174, 217, 235, 0.491) 52%,
+    rgba(148, 233, 223, 0.5) 98%
+  );
+}
+
+.weather-app h1 {
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.585);
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0;
+}
